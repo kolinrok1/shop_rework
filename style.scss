@@ -1,9 +1,11 @@
 @import "vars";
 @import "index";
 @import "product";
+@import "catalog";
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
