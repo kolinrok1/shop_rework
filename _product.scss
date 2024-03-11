@@ -14,6 +14,11 @@
     padding-bottom: 50px;
   }
   &-rigth {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  &-link {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -23,6 +28,12 @@
     color: rgb(99, 99, 99);
     display: flex;
     align-items: center;
+  }
+  &-link:not(:last-child)::after {
+    content: "/";
+  }
+  &-link:last-child {
+    color: $colorText;
   }
 }
 .slider {

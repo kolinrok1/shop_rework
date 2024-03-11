@@ -1,0 +1,170 @@
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  &-cont {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $colorBorder;
+    box-shadow: 6px 4px 35px gray;
+    width: 650px;
+    height: 306px;
+    position: relative;
+    margin-top: 40px;
+  }
+  &-text {
+    margin-left: 30px;
+  }
+  &-head {
+    margin-top: 22px;
+    margin-bottom: 40px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &-exit {
+    position: absolute;
+    right: 28px;
+    top: 22px;
+  }
+  &-inf {
+    margin-top: 6px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(87, 87, 87);
+    display: flex;
+    align-items: center;
+  }
+  &-inf-pri {
+    color: $colorText;
+  }
+  &-inf-left {
+    color: rgb(111, 110, 110);
+  }
+  &-inf-left-border {
+    border: 1px solid $colorBorder;
+    padding: 0 1rem;
+  }
+  &-botton {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    &-push {
+      padding: 1rem 2rem;
+      border: 1px solid $colorBorder;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17px;
+      letter-spacing: 0%;
+      color: $colorBorder;
+      background: white;
+      text-align: center;
+    }
+    &-push:hover {
+      color: white;
+      background: $colorText;
+    }
+  }
+}
+.form-input {
+  width: 360px;
+  margin-top: 40px;
+  margin-left: 120px;
+  &-area {
+    border: 1px solid $colorBorder;
+    outline: none;
+    margin: 0;
+    width: 340px;
+    height: 40px;
+    background: white;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  &-area::placeholder {
+    color: $colorBorder;
+    opacity: 0.4;
+  }
+}
+label {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(34, 34, 34);
+}
+
+.basket {
+  width: 360px;
+  height: 214px;
+  background-color: rgb(245, 243, 243);
+  margin-top: 40px;
+  margin-left: 120px;
+  &-sub {
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgb(74, 74, 74);
+  }
+  &-total {
+    margin-top: 12px;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgb(34, 34, 34);
+    &-span {
+      font-size: 16px;
+      font-weight: 700;
+      color: $colorText;
+    }
+  }
+  &-line {
+    border: 0.5px solid $colorBorder;
+    margin: 20px 42px;
+    opacity: 0.4;
+  }
+  &-botton {
+    padding: 1rem 2rem;
+    border: 1px solid $colorBorder;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: $colorBorder;
+    background: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 17px 43px;
+  }
+  &-botton:hover {
+    color: white;
+    background: $colorText;
+  }
+}
+
+input[type="get"] {
+  border: 1px solid $colorBorder;
+  outline: none;
+  margin: 0;
+  width: 100px;
+  height: 40px;
+  background: white;
+  margin-top: 20px;
+}

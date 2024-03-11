@@ -1,6 +1,12 @@
+summary {
+  display: block;
+}
+
 .filter {
   margin-top: 50px;
   display: flex;
+  position: relative;
+
   //   justify-content: space-between;
   &-left {
     display: block;
@@ -12,6 +18,71 @@
   }
   &-head {
     margin-right: 5px;
+  }
+  &-open {
+    position: absolute;
+    z-index: 99;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  &-open[open] .filter-head {
+    color: rgb(241, 109, 127);
+  }
+  &-open[open] path {
+    fill: $colorText;
+  }
+  &-open[open] {
+    box-shadow: 6px 4px 35px gray;
+    border: 1px solid $colorBorder;
+    background-color: white;
+  }
+  &-content {
+    margin-top: 16px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 360px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &-item[open] .filter-name {
+    border-bottom: 1px solid $colorBorder;
+  }
+  &-item[open] .filter-name-open {
+    color: $colorText;
+  }
+  &-item-link {
+    color: $colorBorder;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  &-menu {
+    position: absolute;
+    width: 360px;
+    z-index: 99;
+    background-color: white;
+  }
+  &-name {
+    color: $colorBorder;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-left: 3px solid $colorText;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+  &-item-link:hover {
+    color: $colorText;
   }
   &-rigth {
     display: flex;
@@ -35,8 +106,45 @@
     flex-direction: column;
     position: absolute;
     background-color: white;
+    z-index: 100;
+    padding: 5px;
+    width: 80px;
+    box-shadow: 6px 4px 35px gray;
+    border: 1px solid $colorBorder;
+    background-color: white;
+    margin-top: 10px;
   }
   &-checkbox-size {
-    margin-top: 5px;
+    margin-top: 10px;
+    color: rgb(111, 110, 110);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+  }
+  &-checkbox-size:last-child {
+    margin-bottom: 10px;
+  }
+}
+.number {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0 15px;
+    color: $colorBorder;
   }
 }
