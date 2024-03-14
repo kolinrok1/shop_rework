@@ -934,6 +934,114 @@ input[type=get] {
   margin-top: 20px;
 }
 
+.reg {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+}
+.reg-head {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(34, 34, 34);
+}
+.reg-input {
+  border: 1px solid rgb(172, 172, 172);
+  outline: none;
+  margin: 0;
+  width: 340px;
+  height: 40px;
+  background: white;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.reg-input::-moz-placeholder {
+  opacity: 0.4;
+}
+.reg-input::placeholder {
+  opacity: 0.4;
+}
+.reg-radio {
+  margin: 20px 0;
+}
+.reg-radio:last-child {
+  margin-left: 20px;
+}
+.reg-text {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(172, 172, 172);
+  margin-top: 15px;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  background-color: white;
+  color: rgb(241, 109, 127);
+  border: 1px solid rgb(241, 109, 127);
+  margin-top: 40px;
+  margin-bottom: 96px;
+}
+
+#Vector {
+  fill: rgb(241, 109, 127);
+}
+
+button:hover {
+  background-color: rgb(241, 109, 127);
+  color: white;
+}
+button:hover #Vector {
+  fill: white;
+}
+
+.description {
+  margin-left: 125px;
+  width: 600px;
+}
+.description-head {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.description-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.description-list {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:before {
+  content: url(img/registration/Vector.svg);
+}
+
 * {
   margin: 0;
   padding: 0;

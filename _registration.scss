@@ -1,0 +1,98 @@
+.reg {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  &-head {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: $colorForm;
+  }
+  &-input {
+    border: 1px solid $colorBorder;
+    outline: none;
+    margin: 0;
+    width: 340px;
+    height: 40px;
+    background: white;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  &-input::placeholder {
+    opacity: 0.4;
+  }
+  &-radio {
+    margin: 20px 0;
+  }
+  &-radio:last-child {
+    margin-left: 20px;
+  }
+  &-text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: $colorBorder;
+    margin-top: 15px;
+  }
+}
+button {
+  padding: 1rem 2rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  background-color: white;
+  color: $colorText;
+  border: 1px solid $colorText;
+  margin-top: 40px;
+  margin-bottom: 96px;
+}
+#Vector {
+  fill: $colorText;
+}
+button:hover {
+  background-color: $colorText;
+  color: white;
+  #Vector {
+    fill: white;
+  }
+}
+.description {
+  margin-left: 125px;
+  width: 600px;
+  &-head {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 22px;
+  }
+  &-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  &-list {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
+ul {
+  list-style-type: none;
+}
+li:before {
+  content: url(img/registration/Vector.svg);
+}
