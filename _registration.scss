@@ -96,3 +96,17 @@ ul {
 li:before {
   content: url(img/registration/Vector.svg);
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  .cart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reg {
+    width: 46%;
+    margin-left: 20px;
+  }
+  .description {
+    width: 46%;
+    margin-left: 30px;
+  }
+}

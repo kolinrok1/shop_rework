@@ -168,3 +168,34 @@ input[type="get"] {
   background: white;
   margin-top: 20px;
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  .cart {
+    padding-left: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-cont {
+      width: 95%;
+      order: 0;
+    }
+    .order {
+      order: 1;
+    }
+    &-botton {
+      order: 2;
+      margin-bottom: 40px;
+    }
+    .form-input {
+      order: 3;
+      width: 45%;
+      margin-left: 20px;
+    }
+    .basket {
+      order: 3;
+      width: 45%;
+      margin-left: 20px;
+      margin-top: 96px;
+    }
+  }
+}

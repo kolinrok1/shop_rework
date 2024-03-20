@@ -449,6 +449,66 @@
   margin-top: 24px;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 50vh);
+    padding-right: calc(50% - 50vh);
+  }
+  .bread {
+    padding-left: 20px;
+  }
+  .head-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .head-man {
+    margin-left: 200px;
+    height: 360px;
+  }
+  .big-text {
+    font-size: 2rem;
+  }
+  .cen-text {
+    font-size: 1.5rem;
+  }
+  .end-text {
+    font-size: 1.5rem;
+  }
+  .top-rigth {
+    padding-right: 20px;
+  }
+  .conditions {
+    padding-top: 40px;
+  }
+  .conditions-text {
+    width: 50%;
+  }
+  .delivery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .sub {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sub-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .sub-rigth {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .sub-left-text {
+    width: 50%;
+  }
+}
 .bread {
   background-color: rgb(248, 243, 244);
   display: flex;
@@ -934,6 +994,37 @@ input[type=get] {
   margin-top: 20px;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .cart {
+    padding-left: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cart-cont {
+    width: 95%;
+    order: 0;
+  }
+  .cart .order {
+    order: 1;
+  }
+  .cart-botton {
+    order: 2;
+    margin-bottom: 40px;
+  }
+  .cart .form-input {
+    order: 3;
+    width: 45%;
+    margin-left: 20px;
+  }
+  .cart .basket {
+    order: 3;
+    width: 45%;
+    margin-left: 20px;
+    margin-top: 96px;
+  }
+}
 .reg {
   display: flex;
   flex-direction: row;
@@ -1042,6 +1133,20 @@ li:before {
   content: url(img/registration/Vector.svg);
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .cart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reg {
+    width: 46%;
+    margin-left: 20px;
+  }
+  .description {
+    width: 46%;
+    margin-left: 30px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
