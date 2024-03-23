@@ -148,3 +148,23 @@ summary {
     color: $colorBorder;
   }
 }
+@media (min-width: 375px) and (max-width: 766px) {
+  .center {
+    padding-left: calc(50% - 100vh / 2);
+    padding-right: calc(50% - 100vh / 2);
+  }
+  .bread {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .filter {
+    display: flex;
+    justify-content: space-around;
+    &-rigth {
+      margin-left: 0;
+    }
+    &-head {
+      display: none;
+    }
+  }
+}

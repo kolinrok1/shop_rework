@@ -485,3 +485,89 @@
     }
   }
 }
+@media (min-width: 375px) and (max-width: 766px) {
+  .center {
+    padding-left: calc(50% - 100vh / 2);
+    padding-right: calc(50% - 100vh / 2);
+  }
+  .bread {
+    padding-left: 20px;
+  }
+  .head {
+    &-left {
+      display: none;
+    }
+    &-rigth {
+      width: 100vh;
+      height: 300px;
+    }
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    &-top {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .wonen {
+    width: 100vw;
+    height: 240px;
+  }
+  .men {
+    width: 100vw;
+    height: 240px;
+  }
+  .kid {
+    width: 100vw;
+    height: 240px;
+  }
+  .product-web {
+    display: flex;
+    justify-content: center;
+  }
+  .big-text {
+    font-size: 2rem;
+  }
+  .cen-text {
+    font-size: 1.5rem;
+  }
+  .end-text {
+    font-size: 1.5rem;
+  }
+  .top {
+    &-rigth {
+      padding-right: 20px;
+    }
+  }
+  .conditions {
+    padding-top: 40px;
+    &-text {
+      width: 50%;
+    }
+  }
+  .delivery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .sub {
+    display: flex;
+    flex-wrap: wrap;
+    &-left {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+    &-rigth {
+      margin-top: 40px;
+      width: 100%;
+    }
+    &-left-text {
+      width: 50%;
+    }
+  }
+}

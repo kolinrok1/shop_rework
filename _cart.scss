@@ -199,3 +199,54 @@ input[type="get"] {
     }
   }
 }
+@media (min-width: 375px) and (max-width: 766px) {
+  br {
+    display: none;
+  }
+  .cart {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    &-cont {
+      width: 95vw;
+      display: flex;
+    }
+    &-head {
+      font-size: 1rem;
+    }
+    &-img1 {
+      width: 80%;
+      height: 100%;
+    }
+    &-img {
+      width: 40%;
+    }
+    &-text {
+      margin-left: 5px;
+    }
+    &-exit {
+      display: none;
+    }
+    &-botton-push {
+      width: 30%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    &-botton {
+      margin-bottom: 15px;
+    }
+  }
+  .form-input {
+    order: 1;
+    width: 95vw;
+    margin-left: 5px;
+    margin-top: 15px;
+    display: flex;
+  }
+  .basket {
+    order: 2;
+    width: 95vw;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+}

@@ -154,3 +154,23 @@
     text-align: left;
   }
 }
+@media (min-width: 375px) and (max-width: 766px) {
+  .center {
+    padding-left: calc(50% - 100vh / 2);
+    padding-right: calc(50% - 100vh / 2);
+  }
+  .bread {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-text {
+      padding-bottom: 30px;
+    }
+    &-rigth {
+      padding-bottom: 20px;
+    }
+  }
+  .slider {
+    width: 100vw;
+  }
+}

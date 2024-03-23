@@ -110,3 +110,20 @@ li:before {
     margin-left: 30px;
   }
 }
+@media (min-width: 375px) and (max-width: 766px) {
+  .reg {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    &-text {
+      margin-left: 5px;
+      text-align: center;
+    }
+  }
+  .description {
+    margin-left: 5px;
+  }
+}
